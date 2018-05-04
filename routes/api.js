@@ -1,10 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const getAPI = require('../modules/getAPI');
+const postAPI = require('../modules/postAPI');
 
 const pathObjs = {
     '/json': {
-        GET: getAPI.json
+        GET: getAPI.json,
+        POST: postAPI.json
     }
 };
 

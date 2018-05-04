@@ -18,7 +18,7 @@
     // Load conf
     if (!env.conf) {
         stdOut('No config file assigned! Using default...'.red);
-        env.conf = `${__dirname}/config.default.json`;
+        env.conf = `${__dirname}\\config.default.json`;
     }
 
     stdOut(`${'Loading config file `'.green}${env.conf.yellow}${'`...'.green}`);
